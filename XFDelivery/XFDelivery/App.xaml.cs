@@ -5,20 +5,24 @@ using Xamarin.Forms;
 using XFDelivery.Interfaces;
 using XFDelivery.Views;
 
+using Xamarin.Forms.Xaml;
+using XFDelivery.ViewModels;
+
 namespace XFDelivery
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
 
-            //Device.SetFlags(new[] { "Shapes_Experimental" });
+            Xamarin.Forms.Device.SetFlags(new[] { "Shapes_Experimental" });
 
             MainPage = new NavigationPage(new MainPage());
 
-            //if (Device.RuntimePlatform == Device.Android)
-            //    DependencyService.Get<IStatusBarStyle>().ChangeTextColor();
+            if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.Android)
+               DependencyService.Get<IStatusBarStyle>().ChangeTextColor();
         }
 
         protected override void OnStart()

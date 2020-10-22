@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -95,7 +94,7 @@
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\XFDelivery\XFDelivery.csproj">
-      <Project>{4C5F4061-1220-4A87-AFEF-4C100C2B1413}</Project>
+      <Project>{50487222-0D0C-4CCD-AAF1-95820EFE5817}</Project>
       <Name>XFDelivery</Name>
     </ProjectReference>
   </ItemGroup>
